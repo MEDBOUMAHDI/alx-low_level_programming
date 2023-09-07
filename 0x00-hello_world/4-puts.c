@@ -1,8 +1,10 @@
 #include<stdio.h>
 /**
  *main entry - point
- * description: A C program that prints with puts function
- * Return always 0 
+ *
+ *description: A C program that prints with puts function
+ *
+ *Return always 0 
 */
 int main(void)
 {
