@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -c -o "$(echo $VFILE | rev | cut -d '.' -f | rev ).o" $CFILE
