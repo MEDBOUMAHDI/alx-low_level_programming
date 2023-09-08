@@ -1,28 +1,23 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
+
 /**
- * main - function is the Entry Point for this porgram
- * checking if 'n' is positive or nigative or 0
- * Return: value is (0)
- */
+* main - Entry point
+* Return: returns 0 when everything works fine
+*/
+
 int main(void)
 {
-	int num;
+	int a;
 
 	srand(time(0));
-	num  = rand() - RAND_MAX / 2;
-	if (num == 0)
-	{
-		printf("%d is zero\n", num);
-	}
-	else if (num > 0)
-	{
-		printf("%d is positive\n", num);
-	}
+	a = rand() - RAND_MAX / 2;
+	if (a > 0)
+		printf("%d is positive\n", a);
+	else if (a == 0)
+		printf("%d is zero\n", a);
 	else
-	{
-		printf("%d is negative\n", num);
-	}
+		printf("%d is negative\n", a);
 	return (0);
 }
