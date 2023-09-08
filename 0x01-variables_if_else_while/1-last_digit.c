@@ -5,7 +5,7 @@
 /**
 * main - Entry point
 *
-* Return: returns 0 (success)
+* Return: returns 0 when everything works fine
 *
 */
 
