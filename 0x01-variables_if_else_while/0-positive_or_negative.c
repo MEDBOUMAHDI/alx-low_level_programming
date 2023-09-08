@@ -20,8 +20,9 @@ int main(void)
 	{
 		printf("%d is positive\n", num);
 	}
-	else{
+	else
+	{
 		printf("%d is negative\n", num);
-	     }
+	}
 	return (0);
 }
