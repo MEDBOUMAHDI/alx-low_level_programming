@@ -11,7 +11,7 @@ int main(void)
 	int num;
 
 	srand(time(0));
-	umn = rand() - RAND_MAX / 2;
+	num  = rand() - RAND_MAX / 2;
 	if (num == 0)
 		printf("%d is zero\n", n);
 	else if (num > 0)
