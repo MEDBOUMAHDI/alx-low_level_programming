@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - entery point 
  * Return: always 0 (success)
  */
-
 int main(void)
 {
-	int a;
-	for ( a = 0; a <= 9; a++)
+	int a = '0';
+
+	for (a = '0'; a <= '9'; a++)
 	{
-		printf("%d ",a);
+		putchar(a);
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
