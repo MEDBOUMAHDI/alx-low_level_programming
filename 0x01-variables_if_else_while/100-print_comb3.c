@@ -8,8 +8,8 @@
 
 int main(void)
 {
-        int m2, m1;
-        int i = 0;
+int m2 , m1;
+int i = 0;
 
         for (m1 = '0'; m1 != ('8' + 1); m1++)
         {
