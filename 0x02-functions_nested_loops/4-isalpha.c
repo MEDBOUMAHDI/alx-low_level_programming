@@ -3,14 +3,14 @@
 #include "main.h"
 
 /**
- * _islower - Function that checks for lowercase character.
+ * _isalpha - Function that checks for alphabetic character.
  * @s: character to classify.
- * Return: 1 if s is lowercase or otherwise 0.
+ * Return: 1 if s is a letter, lowercase or uppercase else 0.
 */
 
-int _islower(int s)
+int _isalpha(int s)
 {
-	if islower(s)
+	if isalpha(s)
 	{
 		return (1);
 	}
