@@ -2,24 +2,24 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Function that prints 10 times the alphabet  in lowercase,
- * followed by a new line.
- * You can only use _putchar twice 
- * Return: 0 always (success)
+ * print_alphabet_x10 - Function that prints 10 times the alphabet,
+ * in lowercase, followed by a new line.
+ * You can only use _putchar twice in your code.
+ * Return: 0.
 */
 
 void print_alphabet_x10(void)
 {
 
-	int m, n;
-	int lower_m;
+	int n, m;
+	int lower_n;
 
-	for (n = 0; n <= 9; n++)
+	for (m = 0; m <= 9; m++)
 	{
-		for (m = 'A'; m <= 'Z'; m++)
+		for (n = 'A'; n <= 'Z'; n++)
 		{
-			lower_m = tolower(m);
-			_putchar(lower_m);
+			lower_n = tolower(n);
+			_putchar(lower_n);
 		}
 	_putchar('\n');
 	}
