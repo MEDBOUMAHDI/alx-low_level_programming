@@ -4,7 +4,7 @@
 /**
  * print_alphabet - Function that prints the alphabet, in lowercase,
  * followed by a new line.
- * You can only use _putchar twice 
+ * You can only use _putchar twice
  * Return: 0 always (success)
 */
 
