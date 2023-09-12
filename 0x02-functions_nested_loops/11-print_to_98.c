@@ -3,12 +3,14 @@
 #include "main.h"
 
 /**
- * print_to_98: A function that prints all natural numbers from m to 98.
+ * print_to_98- A function that prints all natural numbers from m to 98,
  * followed by a new line.
  * @m: integer
  * Numbers must be separated by a comma, followed by a space.
  * Numbers should be printed in order.
- * The first printed number should be the number passed to your function
+ * The first printed number should be the number passed to your function.
+ * The last printed number should be 98.
+ * You are allowed to use the standard library.
  * Return: no return
 */
 
