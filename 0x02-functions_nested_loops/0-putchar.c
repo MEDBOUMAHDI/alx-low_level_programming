@@ -1,16 +1,20 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - writes the character m
- * @m: The character to print
- * Return: always success 1.
- * On error, -1 is returned.
- */
-int _putchar(char m)
+ * main - Entry point
+ * Description: prints _putchar 
+ * Return: 0 always (success)
+*/
+
+int main(void)
 {
-	return (write(1, &m, 1));
-}
-int main(void){
-	char m;
-	_putchar(m);
+	int string[] = {85, 102, 127, 136, 88, 109, 67, 134, 177, 212};
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		_putchar(string[i]);
+	}
+	_putchar('\n');
+	return (0);
 }
