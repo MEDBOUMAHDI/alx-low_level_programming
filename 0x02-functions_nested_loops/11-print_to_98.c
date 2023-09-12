@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * print_to_98: A function that prints all natural numbers from m to 98,
+ * print_to_98: A function that prints all natural numbers from m to 98.
  * followed by a new line.
  * @m: integer
  * Numbers must be separated by a comma, followed by a space.
