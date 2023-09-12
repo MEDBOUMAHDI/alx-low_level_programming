@@ -8,10 +8,10 @@
 
 int main(void)
 {
-	int string[] = {85, 102, 127, 136, 88, 109, 67, 134, 177, 212};
+	int string[] = {85, 102, 127, 136, 88, 109, 67, 134, 177};
 	int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 9; i++)
 	{
 		_putchar(string[i]);
 	}
