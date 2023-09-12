@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Function that prints 10 times the alphabet  in lowercase, followed by a new line.
+ * print_alphabet_x10 - Function that prints 10 times the alphabet  in lowercase,
+ * followed by a new line.
  * You can only use _putchar twice 
  * Return: 0 always (success)
 */
