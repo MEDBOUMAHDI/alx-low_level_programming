@@ -12,8 +12,8 @@ int main(void)
 {
 	int i = 0;
 	long int m = 0;
-      	long int n = 1;
-       	long int  nxt;
+	long int n = 1;
+	long int  nxt;
 
 	while (i < 50)
 	{
