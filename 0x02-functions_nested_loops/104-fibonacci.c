@@ -7,7 +7,8 @@
  * followed by a space .
  * You are allowed to use the standard library.
  * You are not allowed to use any other library (You can’t use GMP etc…).
- * You are not allowed to use long long, malloc, pointers, arrays/tables, or structures.
+ * You are not allowed to use long long, malloc.
+ * you are not allwed to use  pointers, arrays/tables, or structures.
  * You are not allowed to hard code any Fibonacci number (except for 1 and 2).
  * Return: ALways 0 (Success)
  */
