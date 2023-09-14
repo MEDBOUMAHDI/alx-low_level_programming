@@ -1,37 +1,26 @@
 #include <stdio.h>
-
 /**
-*main - program that prints either number
-*or fizz or buzz or fizzBuzz
-*
-*
-*Return: returns 0
-*/
+ * main - Program that prints the numbers from 1 to 100.
+ * Print Fizz if divisible by 3 and Buzz if divisible by 5.
+ * Each number or word should be separated by a space.
+ * Return: Always 0.
+ */
 
 int main(void)
 {
-	int num = 1;
+	int j;
 
-	while (num++ < 100)
+	for (j = 1; j < 100; j++)
 	{
-		if ((num % 3 == 0) && (num % 5 == 0))
-		{
+		if ((j % 3 == 0) && (j % 5 == 0))
 			printf("FizzBuzz ");
-		}
-		else if ((num % 3) == 0)
-		{
+		else if (j % 3 == 0)
 			printf("Fizz ");
-		}
-		else if ((num % 5) == 0)
-		{
-			printf("Buzz");
-		}
+		else if (j % 5 == 0)
+			printf("Buzz ");
 		else
-		{
-			printf("%d ", num);
-		}
+			printf("%d ", j);
 	}
-	printf("\n");
-
+	printf("Buzz\n");
 	return (0);
 }
