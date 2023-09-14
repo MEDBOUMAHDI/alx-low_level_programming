@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /*
  * FUNCTION : multiplies two integer 
@@ -8,5 +8,9 @@ include "main.h"
 
 int mul(int a, int b)
 {
-	return (a * b);
+	int a;
+	int b;
+	int mul;
+	mul = a * b;
+	return(mul);
 }
