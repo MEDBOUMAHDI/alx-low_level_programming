@@ -11,8 +11,7 @@
 
 void print_triangle(int size)
 {
-	int i = 0;
-        int j = 0;
+	int i, j = 0;
 	int space;
 
 	if (size > 0)
