@@ -2,7 +2,7 @@
 
 /**
 *mul - multiplies two numbers
-*@m , @n : two  number
+*@m,@n : two number
 *Return: returns result
 */
 
