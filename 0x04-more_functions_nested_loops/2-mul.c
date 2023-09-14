@@ -6,10 +6,7 @@ include "main.h"
  * return : multiplication of these numbers
  * */
 
-int mul(int a, int b){
-	int a;
-	int b;
-	int mul;
-	mul = a * b;
-	return(mul);
+int mul(int a, int b)
+{
+	return (a * b);
 }
