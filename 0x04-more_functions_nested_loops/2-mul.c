@@ -2,15 +2,12 @@
 
 /**
 *mul - multiplies two numbers
-*@m,@n: two number
+*@m: first number
+*@n: second number
 *Return: returns result
 */
 
 int mul(int m, int n)
 {
-	int m;
-	int n;
-	int mul = 0;
-	mul = m * n;
-	return (mul);
+	return (m * n);
 }
