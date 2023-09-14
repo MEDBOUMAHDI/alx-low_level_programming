@@ -7,15 +7,15 @@
 *Return: returns nothing
 */
 
-void print_square(int siz)
+void print_square(int size)
 {
-	int in1, in2;
+	int inc1, inc2;
 
-	if (siz > 0)
+	if (size > 0)
 	{
-		for (in1 = 0; in1 < siz; in1++)
+		for (inc1 = 0; inc1 < size; inc1++)
 		{
-			for (in2 = 0; in2 < (siz - 1); in2++)
+			for (inc2 = 0; inc2 < (size - 1); inc2++)
 			{
 				putchar('#');
 			}
