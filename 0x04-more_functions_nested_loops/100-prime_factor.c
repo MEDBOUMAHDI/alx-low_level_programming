@@ -8,23 +8,23 @@
 
 int main(void)
 {
-    long num = 612852475143;
-    int increment;
+    long number = 612852475143;
+    int inc;
 
-    while (increment++ < num / 2)
+    while (inc++ < number / 2)
     {
-        if (num % increment == 0)
+        if (number % inc == 0)
         {
-            num /= 2;
+            number /= 2;
             continue;
         }
 
-        for (increment = 3; increment < num / 2; increment += 2)
+        for (inc = 3; inc < number / 2; inc += 2)
         {
-            if (num % increment == 0)
-                num /= increment;
+            if (number % inc == 0)
+                number /= inc;
         }
     }
-    printf("%ld\n", num);
+    printf("%ld\n", number);
     return (0);
 }
