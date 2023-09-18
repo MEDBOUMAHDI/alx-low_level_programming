@@ -1,20 +1,21 @@
 #include "main.h"
 #include <string.h>
 /**
- * rev_string - reverses a string with refrance
- * @s: char pointer
- * Return: the length *s
+ * rev_string - reverses a string 
+ * @string: char pointer
+ * Return: Nothing
  */
-void rev_string(char *s)
+void rev_string(char *string)
 {
-	int len, i;
+	int lenght;
+	int i;
 	char swap;
 
-	len = strlen(s) - 1;
-	for (i = 0; i <= len / 2; i++)
+	lenght = strlen(string) - 1;
+	for (i = 0; i <= lenght / 2; i++)
 	{
-		swap = s[i];
-		s[i] = s[len - i];
-		s[len - i] = swap;
+		swap = string[i];
+		string[i] = string[lenght - i];
+		string[lenght - i] = swap;
 	}
 }
