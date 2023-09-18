@@ -2,8 +2,8 @@
 #include <string.h>
 /**
  * rev_string - reverses a string with refrance
- * @str: char pointer
- * Return: Nothing
+ * @s: char pointer
+ * Return: the length *s
  */
 void rev_string(char *s)
 {
