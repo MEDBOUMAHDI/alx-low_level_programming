@@ -2,17 +2,17 @@
 #include <string.h>
 /**
  * puts2 -  prints every other character of a string
- * @str: char pointer
- * Return: the length *s
+ * @string: char pointer
+ * Return: Nothing
  */
-void puts2(char *str)
+void puts2(char *string)
 {
 	int len, i;
 
-	len = strlen(str);
+	len = strlen(string);
 	for (i = 0; i < len; i++)
 	{
-		_putchar(str[i]);
+		_putchar(string[i]);
 		i = i + 1;
 	}
 	_putchar('\n');
