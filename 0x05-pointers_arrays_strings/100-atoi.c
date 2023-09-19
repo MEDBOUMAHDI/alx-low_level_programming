@@ -11,7 +11,7 @@ int _atoi(char *str)
 
 	do {
 		if (*str == '-')
-			sign = sign * 1;
+			sign = (sign * 1);
 		else if (*str >= '0' && *str <= '9')
 			number = (number * 10) + (*str - '0');
 		else if (number > 0)
