@@ -6,16 +6,16 @@
  */
 int _atoi(char *str)
 {
-	unsigned int x = 0;
-	unsigned int i = 0;
+	unsigned int x, i;
+	//unsigned int i = 0;
 	char negative = 0;
 	char positive = 0;
 
-	/**positive = 0;
-	negative = 0;
+	//positive = 0;
+	//negative = 0;
 	i = 0;
 	x = 0;
-	*/
+
 	while (str[i] != '\0')
 	{
 		if (!((str[i] >= '0') && (str[i] <= '9')) && x > 0)
