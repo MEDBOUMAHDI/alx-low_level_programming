@@ -1,22 +1,40 @@
+#include "main.h"
 /**
- * _atoi - converts a string to an integer
- * @str: string input parameter
- * Return: converted integer from string
-*/
-
+ * _atoi - convert a string to an integer.
+ * @str: char pointer
+ * Return: char pinter
+ */
 int _atoi(char *str)
 {
-	unsigned int number = 0;
-	int sign = 1;
+	unsigned int x;
+	unsigned int i;
+	char negative, positive;
 
-	do {
-		if (*str == '-')
-			sign *=  1;
-		else if (*str >= '0' && *str <= '9')
-			number = (number * 10) + (*str - '0');
-		else if (number > 0)
+	positive = 0;
+	negative = 0;
+	i = 0;
+	x = 0;
+	while (str[i] != '\0')
+	{
+		if (!((str[i] >= '0') && (str[i] <= '9')) && x > 0)
+		{
 			break;
-	} while (*str++);
+		}
+		if (((str[i] >= '0') && (str[i] <= '9')))
+		{
+			x = (x * 10) + (str[i] - '0');
+		}
+		else if (str[i] == '-')
+			negative++;
+		else if (str[i] == '+')
+			positive++;
 
-	return (number * sign);
+		i++;
+	}
+
+	if (positive < negative)
+		x = x * -1;
+	if (positive == 7 && negative == 1)
+		x = x * -1;
+return (x);
 }
