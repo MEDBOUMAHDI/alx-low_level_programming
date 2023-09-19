@@ -6,13 +6,13 @@
  */
 int _atoi(char *str)
 {
-	unsigned int n, i;
+	unsigned int x, i;
 	char negative, positive;
 
 	positive = 0;
 	negative = 0;
 	i = 0;
-	n = 0;
+	x = 0;
 
 	while (str[i] != '\0')
 	{
