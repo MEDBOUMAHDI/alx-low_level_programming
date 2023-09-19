@@ -7,13 +7,13 @@
 int _atoi(char *str)
 {
 	unsigned int x = 0;
-	unsigned int i;
+	unsigned int i = 0;
 	char negative;
 	char positive;
 
 	positive = 0;
 	negative = 0;
-	i = 0;
+	/*i = 0;*/
 	/*x = 0;*/
 
 	while (str[i] != '\0')
