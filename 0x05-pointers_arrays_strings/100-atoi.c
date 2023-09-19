@@ -6,7 +6,7 @@
  */
 int _atoi(char *str)
 {
-	unsigned int x;
+	unsigned int x = 0;
 	unsigned int i;
 	char negative;
 	char positive;
@@ -14,7 +14,7 @@ int _atoi(char *str)
 	positive = 0;
 	negative = 0;
 	i = 0;
-	x = 0;
+	//x = 0;
 
 	while (str[i] != '\0')
 	{
