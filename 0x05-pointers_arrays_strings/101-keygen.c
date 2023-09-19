@@ -10,7 +10,10 @@
 int main(void)
 {
 	char password[84];
-	int index = 0, sum = 0, difference_half1, difference_half2;
+	int index = 0;
+        int sum = 0;
+        int difference_half1;
+	int difference_half2;
 
 	srand(time(0));
 
