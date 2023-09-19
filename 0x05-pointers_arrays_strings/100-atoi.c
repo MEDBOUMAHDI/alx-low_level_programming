@@ -6,12 +6,13 @@
  */
 int _atoi(char *str)
 {
-	unsigned int x, i;
-	char negative = 0;
-	char positive = 0;
+	unsigned int x;
+	unsigned int i;
+	char negative;
+	char positive;
 
-	/**positive = 0;
-	negative = 0;*/
+	positive = 0;
+	negative = 0;
 	i = 0;
 	x = 0;
 
