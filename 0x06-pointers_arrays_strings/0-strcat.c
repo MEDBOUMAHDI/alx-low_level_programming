@@ -1,27 +1,21 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
-  * _strcat - Concatenates two strings
-  * @dest: The destination string
-  * @source: The source string
-  * Return: A pointer to the resulting string dest
-  */
+ * _strcat - a function that concatenates two strings.
+ * @dest: an input string
+ * @source: an input stringin parameter
+ * Return: A pointer to the resulting string
+ */
 char *_strcat(char *dest, char *source)
 {
-	int dlen = 0, i;
+	char *tmp = dest;
 
-	while (dest[dlen])
-	{
-		dlen++;
-	}
+	while (*dest)
+		dest++;
 
-	for (i = 0; source[i] != 0; i++)
-	{
-		dest[dlen] = src[i];
-		dlen++;
-	}
+	while (*source)
+		*dest++ = *source++;
 
-	dest[dlen] = '\0';
-	return (dest);
+	*dest = '\0';
+	return (tmp);
 }
