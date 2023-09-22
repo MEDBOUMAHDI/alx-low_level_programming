@@ -5,21 +5,21 @@
  */
 void print_number(int x)
 {
-	unsigned int x1;
+	unsigned int y;
 
 	if (x < 0)
 	{
-		x1 = -x;
+		y = -x;
 		_putchar('-');
 	} else
 	{
-		x1 = x;
+		y = x;
 	}
 
-	if (x1 / 10)
+	if (y / 10)
 	{
-		print_number(x1 / 10);
+		print_number(y / 10);
 	}
 
-	_putchar((x1 % 10) + '0');
+	_putchar((y % 10) + '0');
 }
