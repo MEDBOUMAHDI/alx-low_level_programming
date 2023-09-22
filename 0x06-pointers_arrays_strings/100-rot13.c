@@ -10,7 +10,7 @@ char *rot13(char *source)
 
 	while (source[i] != '\0')
 	{
-		while (((source[i] >= 'a') && (sourc[i] <= 'z'))
+		while (((source[i] >= 'a') && (source[i] <= 'z'))
 		|| ((source[i] >= 'A') && (source[i] <= 'Z')))
 		{
 			if (((source[i] >= 'a') && (source[i] <= 'm'))
