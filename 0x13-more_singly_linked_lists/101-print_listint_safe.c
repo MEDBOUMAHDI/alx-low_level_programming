@@ -1,30 +1,60 @@
+/*
+ * 0x13. C - More singly linked lists
+ * task Adv 2
+ */
 #include "lists.h"
+/**
+ * find_listint_helper - finds a loop
+ *
+ * @head: printer
+ *
+ * Return: printer
+ */
+listint_t *find_listint_helper(listint_t *head)
+{
+	listint_t *p, *e;
+
+	if (head == NULL)
+		return (NULL);
+
+	for (e = head->next; e != NULL; e = e->next)
+	{
+		if (e == e->next)
+			return (e);
+		for (p = head; p != e; p = p->next)
+			if (p == e->next)
+				return (e->next);
+	}
+	return (NULL);
+}
 
 /**
- * print_listint_safe - prints list, avoids loop
- * @head: points to start of list
- * Return: number of nodes in size_t or exit 98
+ * print_listint_safe - prints a linked list, even if it
+ * has a loop
+ *
+ * @head: printer
+ *
+ * Return: number of nodes
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	/* declarations */
-	size_t nodeCount = 0;
-	/* check for null pointer */
-	while (head)
-	{
-		printf("[%p] %d\n", (void *)head, head->n);
-		nodeCount += 1;
+	size_t len = 0;
+	int i;
+	listint_t *loop;
 
-		if (head > head->next)
+	loop = find_listint_helper((listint_t *) head);
+	for (len = 0, i = 1; (head != loop || i) && head != NULL; len++)
+	{
+		printf("[%p] %d\n", (void *) head, head->n);
+		if (head == loop)
 		{
-			head = head->next;
+			i = 0;
 		}
-		else
-		{
-			head = head->next;
-			printf("-> [%p] %d\n", (void *)head, head->n);
-			break;
-		}
+		head = head->next;
 	}
-	return (nodeCount);
+	if (loop != NULL)
+	{
+		printf("-> [%p] %d\n", (void *) head, head->n);
+	}
+	return (len);
 }
